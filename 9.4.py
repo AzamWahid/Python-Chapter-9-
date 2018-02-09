@@ -32,3 +32,16 @@ print('The Resturant has served '+str(resturant.number_served)+' Coustomer')
 
 resturant.describe_resturant()
 resturant.open_resturant()
+
+#>>>>>>>>>>>>>>>>>>>>>>> 9.6 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+class IceCreameStand(Resturant):
+    def __init__(self,restaurant_name,cuisine_type,flavour):
+        super().__init__(restaurant_name,cuisine_type)
+        self.flavour = flavour;
+
+    def name(self):
+        for fl in self.flavour:
+            print(fl)
+
+ice=IceCreameStand('kolachi','icecream',['lemon','stawbery'])
+ice.name()
